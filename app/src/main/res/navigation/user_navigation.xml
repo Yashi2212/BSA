@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@id/user_nav_home">
+
+    <fragment
+        android:id="@+id/user_nav_dashboard"
+        android:name="com.yashishu.bsa.ui.user.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_user_nav_dashboard_to_customerSupport"
+            app:destination="@id/customerSupport2" />
+        <action
+            android:id="@+id/action_user_nav_dashboard_to_user_nav_order"
+            app:destination="@id/user_nav_order" />
+        <action
+            android:id="@+id/action_user_nav_dashboard_to_chatBotFragment"
+            app:destination="@id/chatBotFragment" />
+        <action
+            android:id="@+id/action_user_nav_dashboard_to_my_profile"
+            app:destination="@id/my_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/user_nav_order"
+        android:name="com.yashishu.bsa.ui.user.OrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_user_nav_order_to_userOrderDetailFragment"
+            app:destination="@id/userOrderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/user_nav_home"
+        android:name="com.yashishu.bsa.ui.user.UserHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_user_home">
+        <action
+            android:id="@+id/action_user_nav_home_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+        <action
+            android:id="@+id/action_user_nav_home_to_user_nav_product"
+            app:destination="@id/user_nav_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/user_nav_product"
+        android:name="com.yashishu.bsa.ui.user.ProductFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_product">
+        <action
+            android:id="@+id/action_user_nav_product_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+        <action
+            android:id="@+id/action_user_nav_product_to_user_nav_home"
+            app:destination="@id/user_nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerSupport2"
+        android:name="com.yashishu.bsa.ui.CustomerSupport"
+        tools:layout="@layout/fragment_customer_support"
+        android:label="Customer Support" />
+    <fragment
+        android:id="@+id/user_nav_Cart"
+        android:name="com.yashishu.bsa.ui.user.UserCartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_usercart">
+        <action
+            android:id="@+id/action_user_nav_Cart_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.yashishu.bsa.ui.user.ProductDetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_product_detail">
+        <action
+            android:id="@+id/action_productDetailFragment_to_user_nav_Cart"
+            app:destination="@id/user_nav_Cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.yashishu.bsa.ui.user.PaymentFragment"
+        tools:layout="@layout/fragment_payment"
+        android:label="PaymentFragment">
+        <argument
+            android:name="totalAmount"
+            android:defaultValue="0.0"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatBotFragment"
+        tools:layout="@layout/fragment_chat_bot"
+        android:name="com.yashishu.bsa.ui.user.ChatBotFragment"
+        android:label="ChatBotFragment" />
+    <fragment
+        android:id="@+id/my_profile"
+        android:name="com.yashishu.bsa.my_profile"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/userOrderDetailFragment"
+        android:name="com.yashishu.bsa.ui.user.UserOrderDetailFragment"
+        android:label="UserOrderDetailFragment">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.yashishu.bsa.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>

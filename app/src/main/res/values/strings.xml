@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Botanica</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_vendordashboard">Dashboard</string>
+    <string name="title_vendorHome">Home</string>
+    <string name="title_vendorProducts">Product List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_required">Storage access is required to select image from gallery.</string>
+    <string name="ok">OK</string>
+    <string name="permission_granted">Permission is granted.</string>
+    <string name="title_orders">Order</string>
+    <string name="title_product">Products</string>
+    <string-array name="products" translatable="true">
+        <item>Flower</item>
+        <item>Indoor and Outdoor Both</item>
+        <item>Indoor Plants</item>
+        <item>Outdoor Plants</item>
+        <item>Seeds</item>
+        <item>Fertilizers/Manures</item>
+        <item>Insecticides/Drugs</item>
+        <item>Cocopeat</item>
+        <item>Accessories and Tools</item>
+    </string-array>
+    <string name="price_per_qty">%.2f x 1 </string>
+    <string name="price_per_qty_2">%.2f x 10 </string>
+    <string name="googlepay_button_content_description">Google Pay</string>
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+    <string name="googlepay_status_checking" translatable="false">Checking if Google Pay is available...</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+    <string name="ask_message">Ask</string>
+    <string name="pk">pk_test_51MuZ36SI6CIXxhZgDxCkqN4QJUXR1Ci3xBfEUkH32s2FOrIXKZIaORHoR8kzEQBWQ02OW8lTGkBsdEeyWmlJvQof00x99mQIYX</string>
+    <string name="api_url">http://192.168.1.9:8000//checkout</string>
+    <string name="account">Account</string>
+    <string name="cart">Cart</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="send">Send</string>
+</resources>
